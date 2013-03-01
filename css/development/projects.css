@@ -1,0 +1,33 @@
+/**
+ * FILEDESCRIPTION
+ *
+ * Some guidelines to follow:
+ *
+ * 1. Break code down into sections, use @section, @subsection
+ * 2. Keep your rules alphabetically sorted.
+ * 3. Only put one selector per line for a block of rules that apply to multiple selectors.
+ * 4. Indent your rules, only one rule per line.
+ * 5. Keep proprietary properties directly below the proposed property.
+ * 6. Comment your css. Especially hacks or tricky parts using cssdoc-comments
+ *
+ * @example:
+ *
+ * element#id,
+ * element.class {
+ * 	rule1: value;
+ * 	-webkit-rule2: value;
+ * 	-moz-rule2: value;
+ * 	rule2: value;
+ * 	top: value;
+ * }
+ *
+ * @lastmodified	2012-01-24 18:00 martinkr
+ *
+ * @TODO
+ *
+ */
+
+/**
+* @section
+*/
+

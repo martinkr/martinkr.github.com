@@ -1,0 +1,167 @@
+/**
+ * FILEDESCRIPTION
+ *
+ * Some guidelines to follow:
+ *
+ * 1. Break code down into sections, use @section, @subsection
+ * 2. Keep your rules alphabetically sorted.
+ * 3. Only put one selector per line for a block of rules that apply to multiple selectors.
+ * 4. Indent your rules, only one rule per line.
+ * 5. Keep proprietary properties directly below the proposed property.
+ * 6. Comment your css. Especially hacks or tricky parts using cssdoc-comments
+ *
+ * @example:
+ *
+ * element#id,
+ * element.class {
+ * 	rule1: value;
+ * 	-webkit-rule2: value;
+ * 	-moz-rule2: value;
+ * 	rule2: value;
+ * 	top: value;
+ * }
+ *
+ * @lastmodified	2012-01-24 18:00 martinkr
+ *
+ * @TODO
+ *
+ */
+
+/**
+* @section
+*/
+
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oswald Light'), local('Oswald-Light'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/HqHm7BVC_nzzTui2lzQTDbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/qpy-UiLNKP-VfOdbcs6r6-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/bH7276GfdCjMjApa_dkG6bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+
+html,
+body {
+	height: 100%;
+	background : #dfded4;
+}
+body {
+	text-align: center;
+	font-size: 16px;
+	color: #909090;
+	line-height: 1.5;
+	font-family: Georgia;
+	margin-top: 10%;
+}
+
+header {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -216px;
+	margin-top: -200px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+	line-height: 1.13 /*1.2*/;
+}
+
+h1 {
+	color: #2288cf;
+	font-size: 60px;
+	letter-spacing: 0.06em;
+	font-weight: 700;
+
+
+}
+
+h2 {
+	font-size: 25px;
+	color: #909090;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+
+
+a {
+	-webkit-transition: all 0.25s ease-in;
+}
+
+a,
+a:link,
+a:visited {
+	color: #2288cf;
+	text-decoration: none;
+}
+
+a,
+a:hover,
+a:active {
+	color: #214ECF;
+	text-decoration: none;
+}
+
+ul,li {display: inline-block;}
+
+section {
+ 	position: absolute;
+	top: 90%;
+	background:#2f2f27;
+	border-top: 1px solid #909090;
+	height: auto;
+	width: 100%;
+	left:0;
+}
+
+section h2 {
+	height: 25px;
+	padding: 20px 0;
+	width: 100%;
+	background: #2f2f27;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+
+
+
+}
+section h2.fixed {
+	opacity: 0.9;
+	position: fixed;
+	top:0;
+	left:0;
+}
+
+section h3 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: #2288cf;
+
+
+}
+
+article {
+	margin: 80px;
+	text-align: left;
+	width: 800px;
+	position: relative;
+	left: 50%;
+	margin-left: -400px;
+}
+
