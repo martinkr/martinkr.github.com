@@ -119,10 +119,13 @@ a:active {
 
 ul,li {display: inline-block;}
 
+/**
+* section contains all the projects
+*/
 section {
  	position: absolute;
 	top: 90%;
-	background:#2f2f27;
+	background:#fff;
 	border-top: 1px solid #909090;
 	height: auto;
 	width: 100%;
@@ -133,14 +136,31 @@ section h2 {
 	height: 25px;
 	padding: 20px 0;
 	width: 100%;
-	background: #2f2f27;
+	background: #fff;
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 400;
+	color: #2288cf;
+	z-index: 10;
+}
 
-
+section h2 .cta {
+	opacity: 1;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
 
 }
+
+section h2 .small {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 200px;
+}
+
 section h2.fixed {
 	opacity: 0.9;
 	position: fixed;
@@ -152,8 +172,15 @@ section h3 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	color: #2288cf;
+		display: inline-block;
 
 
+
+}
+section h4 {
+ 	display: inline-block;
+		font-family: 'Oswald', sans-serif;
+	font-weight: 400;
 }
 
 article {
@@ -163,5 +190,6 @@ article {
 	position: relative;
 	left: 50%;
 	margin-left: -400px;
+	z-index: 5;
 }
 
