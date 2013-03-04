@@ -50,12 +50,25 @@ input[type="submit"] {
 	-webkit-appearance: button;
 }
 
-/*******/
 
-@media screen and (max-width: 801px)  {
+
+@media screen and (max-width: 900px)  {
 
 	header {
 			margin-top: -100px;
+	}
+	article {
+		width: 590px;
+		margin-left: -295px;
+
+	}
+	html body section {
+		display: block;
+	}
+	section h2 .small {
+		width: 590px;
+		left: 50%;
+		margin-left: -275px;
 	}
 
 }
@@ -66,6 +79,11 @@ input[type="submit"] {
 			margin-top: -150px;
 	}
 
+
+	html body section {
+		display: none;
+		overfow-x: scroll ! important;
+	}
 }
 
 @media screen and (max-width: 481px)  {

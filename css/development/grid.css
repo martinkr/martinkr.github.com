@@ -33,17 +33,13 @@
 .grid-item {
 	margin: 5px;
 	float :left;
-	background: #000;
-	opacity: 0.5
+
 }
 .grid-5 {
-	width: 190px;
-	height: 331px;
-}
-.grid-7-5 {
 	width: 290px;
 	height: 331px;
 }
+
 
 .grid-15 {
 	width: 590px;

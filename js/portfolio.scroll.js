@@ -16,9 +16,9 @@ portfolio = {};
 
 portfolio.scroll = {
 
-	__version: 0.0, // class version 
+	__version: 0.0, // class version
 	__class: '', // class name
-	
+
 	/**
 	 * Adds class-specific events
 	 * @private
@@ -27,7 +27,7 @@ portfolio.scroll = {
 	_addEvents: function() {
 		jQuery(window).on('scroll', portfolio.scroll.handler)
 	},
-	
+
 	/**
 	 * Prepares environment, usually called by constructor-function
 	 * @private
@@ -36,8 +36,8 @@ portfolio.scroll = {
 	_setUp: function() {
 		portfolio.scroll._addEvents();
 	},
-	
-	/** 
+
+	/**
 	 * Contructor
 	 * @method initialize
 	 * @return {Void}
@@ -45,38 +45,36 @@ portfolio.scroll = {
 	initialize: function() {
 		var _scope = portfolio.scroll;
 		_scope._setUp();
-		
 	},
-	
-	/** 
+
+	getScrollY: function () {
+		return window.scrollY;
+	},
+
+	/**
 	 * @method handler
 	 * @param {Event}
 	 * @return {Void}
 	 */
 	handler: function(event_) {
-		var _iDiff = $('section').offset().top - window.scrollY,
+		var _iDiff = $('section').offset().top - portfolio.scroll.getScrollY(),
 			_$element = $('#sticky')
 			;
  		if (_iDiff <= 0 && _$element.css('position') !== 'fixed') {
-			_$element.css({
-				'position':'fixed',
-				'top': '0'
-			})
-			.find('.cta').fadeOut()
-			.end()
-			.find('.small').fadeIn();
-
+			_$element.addClass('is-sticky');
+			$('article:first').css('margin-top','100px')
 		}
 		if (_iDiff > 0 ) {
- 			_$element.css({
-				'position':'absolute',
-				'top':''
-			})
-			.find('.cta').fadeIn()
-			.end()
-			.find('.small').fadeOut();
+ 			_$element.removeClass('is-sticky');
+ 			$('article:first').css('margin-top','50px')
 		}
 	}
 };
-// register onDocumentReady 
-jQuery(document).ready(portfolio.scroll.initialize);
+// register onDocumentReady
+jQuery(document).ready(function () {
+	portfolio.scroll.initialize();
+	portfolio.scroll.handler();
+
+});
+
+
