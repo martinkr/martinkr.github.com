@@ -60,13 +60,21 @@ portfolio.scroll = {
 		var _iDiff = $('section').offset().top - portfolio.scroll.getScrollY(),
 			_$element = $('#sticky')
 			;
+
+		if ( navigator.userAgent.toLowerCase().match(/ipad/) ) {
+			$('section').css('display','none')
+			// _$element.addClass('is-sticky');
+			// $('article:first').css('margin-top','100px');
+			// $('section').css('top','0')
+			return;
+		}
  		if (_iDiff <= 0 && _$element.css('position') !== 'fixed') {
 			_$element.addClass('is-sticky');
-			$('article:first').css('margin-top','100px')
+			$('article:first').css('margin-top','100px');
 		}
 		if (_iDiff > 0 ) {
  			_$element.removeClass('is-sticky');
- 			$('article:first').css('margin-top','50px')
+ 			$('article:first').css('margin-top','50px');
 		}
 	}
 };

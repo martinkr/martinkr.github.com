@@ -76,15 +76,15 @@ header {
 	font-family: 'Oswald', sans-serif;
 	font-size: 24px;
 	line-height: 1.13 /*1.2*/;
+	z-index: 1;
 }
+
 
 h1 {
 	color: #2288cf;
 	font-size: 60px;
 	letter-spacing: 0.06em;
 	font-weight: 700;
-
-
 }
 
 h2 {
@@ -131,6 +131,7 @@ section {
 	width: 100%;
 	left:0;
 	overflow: hidden;
+	z-index: 2;
 }
 
 section h2 {
@@ -221,5 +222,6 @@ article {
 	margin-left: -450px;
 	z-index: 5;
 	margin-bottom: 80px;
+	z-index: 2;
 }
 
