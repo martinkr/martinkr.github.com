@@ -68,11 +68,15 @@ portfolio.scroll = {
 			// $('section').css('top','0')
 			return;
 		}
+		if (portfolio.scroll.getScrollY() <= 15 ) { jQuery('html').removeClass('is-moving'); }
+		if (portfolio.scroll.getScrollY() > 15 ) { jQuery('html').addClass('is-moving'); }
+
  		if (_iDiff <= 0 && _$element.css('position') !== 'fixed') {
 			_$element.addClass('is-sticky');
 			$('article:first').css('margin-top','100px');
 		}
 		if (_iDiff > 0 ) {
+
  			_$element.removeClass('is-sticky');
  			$('article:first').css('margin-top','50px');
 		}
