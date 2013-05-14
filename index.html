@@ -25,7 +25,11 @@
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/portfolio.scroll.js"></script>
+		<script src="js/portfolio.video.js"></script>
 
+
+		<script src="submodules/mediaelement/build/mediaelement-and-player.min.js"></script>
+		<link rel="stylesheet" href="submodules/mediaelement/build/mediaelementplayer.css" />
 
 	</head>
 
@@ -49,7 +53,7 @@
 	</header>
 
 <span class="cta">⬇</span>
-	<section>
+	<section id="projects">
 
 		<h2 id="sticky" ><span class="small">Martin Krause <span>| Senior User Interface Developer</span></span></h2>
 
@@ -59,7 +63,7 @@
 				<h4>| 2012 | Razorfish GmbH</h4>
 			</hgroup>
 			<ul>
-				<li class="grid-item grid-15 project_audi-a3-sportback-1"></li>
+				<li class="grid-item grid-15 project_audi-a3-sportback-1" data-layer="assets/videos/a3.mov"></li>
 				<li class="grid-item grid-5 project_audi-a3-sportback-2"></li>
 				<li class="grid-item grid-5 project_audi-a3-sportback-3"></li>
 				<li class="grid-item grid-5 project_audi-a3-sportback-4"></li>
@@ -113,6 +117,7 @@
 
 	</section>
 
+	<section id="layer"></section>
 
  	</body>
 

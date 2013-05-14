@@ -25,7 +25,7 @@ portfolio.scroll = {
 	 * @return {Void}
 	 */
 	_addEvents: function() {
-		jQuery(window).on('scroll', portfolio.scroll.handler)
+		jQuery(window).on('scroll', portfolio.scroll.handler);
 	},
 
 	/**
@@ -57,15 +57,15 @@ portfolio.scroll = {
 	 * @return {Void}
 	 */
 	handler: function(event_) {
-		var _iDiff = $('section').offset().top - portfolio.scroll.getScrollY(),
+		var _iDiff = $('#projects').offset().top - portfolio.scroll.getScrollY(),
 			_$element = $('#sticky')
 			;
 
 		if ( navigator.userAgent.toLowerCase().match(/ipad/) ) {
-			$('section').css('display','none')
+			$('#projects').css('display','none')
 			// _$element.addClass('is-sticky');
 			// $('article:first').css('margin-top','100px');
-			// $('section').css('top','0')
+			// $('#projects').css('top','0')
 			return;
 		}
 		if (portfolio.scroll.getScrollY() <= 15 ) { jQuery('html').removeClass('is-moving'); }
@@ -86,7 +86,6 @@ portfolio.scroll = {
 jQuery(document).ready(function () {
 	portfolio.scroll.initialize();
 	portfolio.scroll.handler();
-
 });
 
 

@@ -122,7 +122,7 @@ ul,li {display: inline-block;}
 /**
 * section contains all the projects
 */
-section {
+#projects {
  	position: absolute;
 	top: 100%;
 	background:#fff;
@@ -134,7 +134,7 @@ section {
 	z-index: 2;
 }
 
-section h2 {
+#projects h2 {
 	height: 50px;
  	width: 100%;
 	background: #fff;
@@ -150,14 +150,14 @@ section h2 {
 	box-shadow: 0px 0px 0px rgba(90,90,90,0);
 }
 
-section h2.is-sticky {
+#projects h2.is-sticky {
 	position:fixed;
 	top: 0;
 	height: 40px;
 	box-shadow: 0px 0px 15px rgba(90,90,90,0.20);
 }
 
-section h2 .cta {
+#projects h2 .cta {
 	-webkit-transition: all 0.35s ease-in;
 	opacity: 1;
 	position: absolute;
@@ -206,11 +206,11 @@ section h2 .cta {
     box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
   }
 }
-section h2.is-sticky .cta {
+#projects h2.is-sticky .cta {
 	top: -40px;
 }
 
-section h2 .small {
+#projects h2 .small {
 	-webkit-transition: all 0.35s ease-in;
 	position: absolute;
 	bottom: -40px;
@@ -224,16 +224,16 @@ section h2 .small {
 	text-align: left;
 }
 
-section h2.is-sticky .small {
+#projects h2.is-sticky .small {
 	bottom: 5px;
 }
 
-section h2.is-sticky .small span {
+#projects h2.is-sticky .small span {
 	font-size: 14px;
 }
 
 
-section h3 {
+#projects h3 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	color: #2288cf;
@@ -241,7 +241,7 @@ section h3 {
 	margin-left: 20px;
 }
 
-section h4 {
+#projects h4 {
  	display: inline-block;
 		font-family: 'Oswald', sans-serif;
 	font-weight: 400;
@@ -257,5 +257,21 @@ article {
 	z-index: 5;
 	margin-bottom: 80px;
 	z-index: 2;
+}
+
+[data-layer] {
+	cursor: pointer;
+}
+
+#layer {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: #fff;
+	display: none;
+	z-index: 10000;
 }
 
