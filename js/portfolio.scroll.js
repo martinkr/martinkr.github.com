@@ -45,6 +45,7 @@ portfolio.scroll = {
 	initialize: function() {
 		var _scope = portfolio.scroll;
 		_scope._setUp();
+		jQuery('.cta').on('click',function () {jQuery('html, body').animate({'scrollTop':jQuery(window).height()+'px'}, 1000) });
 	},
 
 	getScrollY: function () {
@@ -58,7 +59,8 @@ portfolio.scroll = {
 	 */
 	handler: function(event_) {
 		var _iDiff = $('#projects').offset().top - portfolio.scroll.getScrollY(),
-			_$element = $('#sticky')
+			_$element = $('#sticky'),
+			_iEdge = $('header').position().top
 			;
 
 		if ( navigator.userAgent.toLowerCase().match(/ipad/) ) {
@@ -68,14 +70,17 @@ portfolio.scroll = {
 			// $('#projects').css('top','0')
 			return;
 		}
+
 		if (portfolio.scroll.getScrollY() <= 15 ) { jQuery('html').removeClass('is-moving'); }
 		if (portfolio.scroll.getScrollY() > 15 ) { jQuery('html').addClass('is-moving'); }
-
- 		if (_iDiff <= 0 && _$element.css('position') !== 'fixed') {
+		if (_iDiff < 1) {
+			_$element.css('position','fixed')
+		} else {_$element.css('position','absolute')};
+ 		if (_iDiff <= _iEdge && _$element.css('position') !== 'fixed') {
 			_$element.addClass('is-sticky');
 			$('article:first').css('margin-top','100px');
 		}
-		if (_iDiff > 0 ) {
+		if (_iDiff > _iEdge ) {
 
  			_$element.removeClass('is-sticky');
  			$('article:first').css('margin-top','50px');

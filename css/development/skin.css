@@ -232,6 +232,22 @@ ul,li {display: inline-block;}
 	font-size: 14px;
 }
 
+#projects h2.is-sticky .small span span {
+	font-size: 12px;
+}
+
+#projects h2.is-sticky .small a,
+#projects h2.is-sticky .small a:link,
+#projects h2.is-sticky .small a:visited {
+	font-size: 12px;
+	color: #909090;
+}
+
+
+#projects h2.is-sticky .small a:hover,
+#projects h2.is-sticky .small a:active {
+	color: #214ECF;
+}
 
 #projects h3 {
 	font-family: 'Oswald', sans-serif;
@@ -275,3 +291,16 @@ article {
 	z-index: 10000;
 }
 
+#layer .mediaelement {
+	width: 900px;
+	height: 540px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -450px;
+	margin-top: -270px;
+}
+
+article {
+	-webkit-transition: margin 0.25s ease-in;
+}
