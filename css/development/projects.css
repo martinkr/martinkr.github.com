@@ -31,6 +31,21 @@
 * @section
 */
 
+.project_audi-rs-models-1 {
+	background: url('../../img/projects/2013-audi-rs-models/overview_590x332.jpg') 0 0 no-repeat;
+}
+.project_audi-rs-models-2 {
+	background: url('../../img/projects/2013-audi-rs-models/detail_1_290x332.jpg') 0 0 no-repeat;
+}
+.project_audi-rs-models-3 {
+	background: url('../../img/projects/2013-audi-rs-models/detail_2_290x332.jpg') 0 0 no-repeat;
+}
+.project_audi-rs-models-4 {
+	background: url('../../img/projects/2013-audi-rs-models/detail_3_290x332.jpg') 0 0 no-repeat;
+}
+.project_audi-rs-models-5 {
+	background: url('../../img/projects/2013-audi-rs-models/detail_4_290x332.jpg') 0 0 no-repeat;
+}
 
 .project_audi-a3-sportback-1 {
 	background: url('../../img/projects/2012-audi-a3-sportback/overview_590x332.jpg') 0 0 no-repeat;
