@@ -52,7 +52,7 @@ portfolio.video = {
 	 */
 	show: function(event_) {
 		var _$element = jQuery(event_.target);
-		jQuery('#layer').append('<video id="player" src="'+_$element.attr('data-layer')+'" width="900" height="540" class="mediaelement"></video>')
+		jQuery('#layer').append('<video id="player" src="'+_$element.attr('data-layer')+'" width="900" height="'+_$element.attr('data-layer-height')+'" class="mediaelement"></video>')
 		_player = new MediaElementPlayer('#player', {});
 		jQuery('#layer').css({'display':'block'}).animate({'opacity':1})
 	},
