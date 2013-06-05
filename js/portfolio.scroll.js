@@ -85,6 +85,13 @@ portfolio.scroll = {
  			_$element.removeClass('is-sticky');
  			$('article:first').css('margin-top','50px');
 		}
+
+		jQuery('[data-layer]').each(function ( ){
+console.log(jQuery(this).offset().top +jQuery(this).outerHeight() < jQuery(window).height() + jQuery(window).scrollTop() )
+			if(jQuery(this).offset().top +jQuery(this).outerHeight() < jQuery(window).height() + jQuery(window).scrollTop() ) {
+				jQuery(this).find('span').stop().delay(250).animate({'opacity':0.75}).delay(250).animate({'opacity':0});
+			}
+		})
 	}
 };
 // register onDocumentReady
