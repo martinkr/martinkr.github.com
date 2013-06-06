@@ -31,6 +31,15 @@
 * @section
 */
 
+
+.project_audi-nemo-1 {
+	background: url('../../img/projects/2013-audi-nemo/overview_590x332.jpg') 0 0 no-repeat;
+}
+.project_audi-nemo-2 {
+	background: url('../../img/projects/2013-audi-nemo/detail_1_290x332.jpg') 0 0 no-repeat;
+}
+
+
 .project_audi-rs-models-1 {
 	background: url('../../img/projects/2013-audi-rs-models/overview_590x332.jpg') 0 0 no-repeat;
 }
