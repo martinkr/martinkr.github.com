@@ -87,8 +87,8 @@ portfolio.scroll = {
 		}
 
 		jQuery('[data-layer]').each(function ( ){
-console.log(jQuery(this).offset().top +jQuery(this).outerHeight() < jQuery(window).height() + jQuery(window).scrollTop() )
-			if(jQuery(this).offset().top +jQuery(this).outerHeight() < jQuery(window).height() + jQuery(window).scrollTop() ) {
+			return;
+ 			if(jQuery(this).offset().top +jQuery(this).outerHeight() < jQuery(window).height() + jQuery(window).scrollTop() ) {
 				jQuery(this).find('span').stop().delay(250).animate({'opacity':0.75}).delay(250).animate({'opacity':0});
 			}
 		})
