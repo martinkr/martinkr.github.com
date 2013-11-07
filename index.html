@@ -27,6 +27,9 @@
 		<script src="js/portfolio.scroll.js"></script>
 		<!-- <script src="js/portfolio.video.js"></script>-->
 
+		 <link href="//fonts.googleapis.com/css?family=Source+Sans Pro:200italic,200,300italic,300,400italic,400,600italic,600,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+		 <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css">
+
 
 		<script src="submodules/mediaelement/build/mediaelement-and-player.min.js"></script>
 		<link rel="stylesheet" href="submodules/mediaelement/build/mediaelementplayer.css" />
@@ -34,28 +37,31 @@
 	</head>
 
 	<body>
+
+
 	<header>
-		<nav>
+
+		<nav class="sticky fx-header fx-show">
+			<h2><span class="small">Martin Krause <span>| Front End Architect | <a href="http://github.com/martinkr" title="github">github</a> <span>|</span> <a href="https://www.xing.com/profile/Martin_Krause8" title="xing">xing</a> <span>|</span> <a href="http://lnkd.in/JKFdkQ" title="LinkedIn">LinkedIn</a></span></span></h2>
+			<div class="fx-line"></div>
+		</nav>
+
+		<nav class="intro">
 			<hgroup>
-			Hey, my name is
+
 			<h1>Martin Krause</h1>
-			<h2>I'm a front end architect</h2>
-			</hgroup>
-			currently working for <a href="http://razorfish.de/">Razorfish</a>.<br>
+			<h2>Front end architect at <a href="http://razorfish.de/">Razorfish</a><br>
 			Meet me at
 			<ul>
 				<li><a href="http://github.com/martinkr" title="github">github</a>, </li>
-				<li><a href="https://www.xing.com/profile/Martin_Krause8" title="xing">xing</a> or </li>
-				<li><a href="http://lnkd.in/JKFdkQ" title="LinkedIn">LinkedIn</a>.</li>
-
-			</ul>
+				<li><a href="https://www.xing.com/profile/Martin_Krause8" title="xing">xing</a>,</li>
+				<li><a href="http://lnkd.in/JKFdkQ" title="LinkedIn">LinkedIn</a></li>
+			</ul> or scroll down
 		</nav>
 	</header>
 
-	<span class="cta">selected projects</span>
 	<section id="projects">
 
-		<h2 id="sticky" ><span class="small">Martin Krause <span>| Front End Architect | <a href="http://github.com/martinkr" title="github">github</a> <span>|</span> <a href="https://www.xing.com/profile/Martin_Krause8" title="xing">xing</a> <span>|</span> <a href="http://lnkd.in/JKFdkQ" title="LinkedIn">LinkedIn</a></span></span></h2>
 
 		<article>
 			<hgroup>
@@ -63,11 +69,11 @@
 				<h4>| 2013 | Razorfish GmbH</h4>
 			</hgroup>
 			<ul>
-				<li class="grid-item grid-15 project_audi-omr-1"></li>
-				<li class="grid-item grid-5 project_audi-omr-2"></li>
-				<li class="grid-item grid-5 project_audi-omr-3"></li>
-				<li class="grid-item grid-5 project_audi-omr-4"></li>
-				<li class="grid-item grid-5 project_audi-omr-5"></li>
+				<li class="grid-item grid-15 project_audi-omr-1 fx-left"></li>
+				<li class="grid-item grid-5 project_audi-omr-2 fx-right"></li>
+				<li class="grid-item grid-5 project_audi-omr-3 fx-left"></li>
+				<li class="grid-item grid-5 project_audi-omr-4 fx-center"></li>
+				<li class="grid-item grid-5 project_audi-omr-5 fx-right"></li>
  			</ul>
 		</article>
 
@@ -77,11 +83,11 @@
 				<h4>| 2013 | Razorfish GmbH</h4>
 			</hgroup>
 			<ul>
-				<li class="grid-item grid-15 project_audi-rs-models-1" data-layer-height="485" data-layer="assets/videos/900x485/audirsmodels.mp4"></li>
-				<li class="grid-item grid-5 project_audi-rs-models-2"></li>
-				<li class="grid-item grid-5 project_audi-rs-models-3"></li>
-				<li class="grid-item grid-5 project_audi-rs-models-4"></li>
-				<li class="grid-item grid-5 project_audi-rs-models-5"></li>
+				<li class="grid-item grid-15 project_audi-rs-models-1 fx-left" data-layer-height="485" data-layer="assets/videos/900x485/audirsmodels.mp4"></li>
+				<li class="grid-item grid-5 project_audi-rs-models-2 fx-right"></li>
+				<li class="grid-item grid-5 project_audi-rs-models-3 fx-left"></li>
+				<li class="grid-item grid-5 project_audi-rs-models-4 fx-center"></li>
+				<li class="grid-item grid-5 project_audi-rs-models-5 fx-right"></li>
 			</ul>
 		</article>
 
@@ -91,8 +97,8 @@
 				<h4>| 2012 | Razorfish GmbH</h4>
 			</hgroup>
 			<ul>
-				<li class="grid-item grid-15 project_audi-nemo-1" data-layer-height="485"></li>
-				<li class="grid-item grid-5 project_audi-nemo-2"></li>
+				<li class="grid-item grid-15 project_audi-nemo-1 fx-left" data-layer-height="485"></li>
+				<li class="grid-item grid-5 project_audi-nemo-2 fx-right"></li>
 			</ul>
 		</article>
 
@@ -103,11 +109,11 @@
 				<h4>| 2012 | Razorfish GmbH</h4>
 			</hgroup>
 			<ul>
-				<li class="grid-item grid-15 project_audi-a3-sportback-1" data-layer-height="540" data-layer="assets/videos/900x540/a3sportback.mp4"></li>
-				<li class="grid-item grid-5 project_audi-a3-sportback-2"></li>
-				<li class="grid-item grid-5 project_audi-a3-sportback-3"></li>
-				<li class="grid-item grid-5 project_audi-a3-sportback-4"></li>
-				<li class="grid-item grid-5 project_audi-a3-sportback-5"></li>
+				<li class="grid-item grid-15 project_audi-a3-sportback-1 fx-left" data-layer-height="540" data-layer="assets/videos/900x540/a3sportback.mp4"></li>
+				<li class="grid-item grid-5 project_audi-a3-sportback-2 fx-right"></li>
+				<li class="grid-item grid-5 project_audi-a3-sportback-3 fx-left"></li>
+				<li class="grid-item grid-5 project_audi-a3-sportback-4 fx-center"></li>
+				<li class="grid-item grid-5 project_audi-a3-sportback-5 fx-right"></li>
 			</ul>
 		</article>
 
@@ -119,13 +125,13 @@
 			</hgroup>
 
 			<ul>
-				<li class="grid-item grid-15 project_palmengarten-1"></li>
-				<li class="grid-item grid-5 project_palmengarten-2"></li>
-				<li class="grid-item grid-5 project_palmengarten-3"></li>
-				<li class="grid-item grid-15 project_palmengarten-4"></li>
-				<li class="grid-item grid-5 project_palmengarten-5"></li>
-				<li class="grid-item grid-5 project_palmengarten-6"></li>
-				<li class="grid-item grid-5 project_palmengarten-7"></li>
+				<li class="grid-item grid-15 project_palmengarten-1 fx-left"></li>
+				<li class="grid-item grid-5 project_palmengarten-2 fx-right"></li>
+				<li class="grid-item grid-5 project_palmengarten-3 fx-left"></li>
+				<li class="grid-item grid-15 project_palmengarten-4 fx-right"></li>
+				<li class="grid-item grid-5 project_palmengarten-5 fx-left"></li>
+				<li class="grid-item grid-5 project_palmengarten-6 fx-center"></li>
+				<li class="grid-item grid-5 project_palmengarten-7 fx-right"></li>
  			</ul>
 		</article>
 
@@ -136,8 +142,8 @@
 			</hgroup>
 
 			<ul>
-				<li class="grid-item grid-15 project_pattex-gravity-1"></li>
-				<li class="grid-item grid-5 project_pattex-gravity-2"></li>
+				<li class="grid-item grid-15 project_pattex-gravity-1 fx-left"></li>
+				<li class="grid-item grid-5 project_pattex-gravity-2 fx-right"></li>
 			</ul>
 		</article>
 
@@ -148,8 +154,8 @@
 			</hgroup>
 
 			<ul>
-				<li class="grid-item grid-15 project_audi-brand-portal-1"></li>
-				<li class="grid-item grid-5 project_audi-brand-portal-2"></li>
+				<li class="grid-item grid-15 project_audi-brand-portal-1 fx-left"></li>
+				<li class="grid-item grid-5 project_audi-brand-portal-2 fx-right"></li>
 			</ul>
 		</article>
 
