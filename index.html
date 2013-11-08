@@ -22,6 +22,7 @@
 		<link href="css/development/skin.css" type="text/css" rel="stylesheet" media="screen" />
 		<link href="css/development/responsive.css" type="text/css" rel="stylesheet" media="screen" />
 		<link href="css/development/projects.css" type="text/css" rel="stylesheet" media="screen" />
+		<link href="css/development/fx.css" type="text/css" rel="stylesheet" media="screen" />
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/portfolio.scroll.js"></script>
@@ -31,131 +32,134 @@
 		 <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css">
 
 
-		<script src="submodules/mediaelement/build/mediaelement-and-player.min.js"></script>
-		<link rel="stylesheet" href="submodules/mediaelement/build/mediaelementplayer.css" />
+		<script src="submodules/jPoshload/jposhload.js"></script>
 
 	</head>
 
 	<body>
 
 
-	<header>
+	<header >
 
-		<nav class="sticky fx-header fx-show">
-			<h2><span class="small">Martin Krause <span>| Front End Architect | <a href="http://github.com/martinkr" title="github">github</a> <span>|</span> <a href="https://www.xing.com/profile/Martin_Krause8" title="xing">xing</a> <span>|</span> <a href="http://lnkd.in/JKFdkQ" title="LinkedIn">LinkedIn</a></span></span></h2>
+		<nav class="sticky fx-header">
+			<h2><span class="small">Martin Krause <span>: Front End Architect &ndash; <a href="http://github.com/martinkr" title="github">github</a>, <a href="https://www.xing.com/profile/Martin_Krause8" title="xing">xing</a>, <a href="http://lnkd.in/JKFdkQ" title="LinkedIn">LinkedIn</a></span></span></h2>
 			<div class="fx-line"></div>
 		</nav>
 
-		<nav class="intro">
-			<hgroup>
+		<section class="fx-intro has-intro">
+			<nav class="intro fx-item">
+				<hgroup>
 
-			<h1>Martin Krause</h1>
-			<h2>Front end architect at <a href="http://razorfish.de/">Razorfish</a><br>
-			Meet me at
-			<ul>
-				<li><a href="http://github.com/martinkr" title="github">github</a>, </li>
-				<li><a href="https://www.xing.com/profile/Martin_Krause8" title="xing">xing</a>,</li>
-				<li><a href="http://lnkd.in/JKFdkQ" title="LinkedIn">LinkedIn</a></li>
-			</ul> or scroll down
-		</nav>
+				<h1>Martin Krause</h1>
+
+				<h2>Front end architect at <a href="http://razorfish.de/">Razorfish</a><br>
+				Meet me at
+				<ul>
+					<li><a href="http://github.com/martinkr" title="github">github</a>, </li>
+					<li><a href="https://www.xing.com/profile/Martin_Krause8" title="xing">xing</a>,</li>
+					<li><a href="http://lnkd.in/JKFdkQ" title="LinkedIn">LinkedIn</a data-src=""></li>
+				</ul><br/><span>or scroll down</span>
+			</nav>
+		</section>
+
 	</header>
 
 	<section id="projects">
 
 
-		<article>
-			<hgroup>
+		<article  class="fx-project" data-id="project_2013-audi-omr">
+			<hgroup class="fx-item fx-headline">
 				<h3><a href="http://audi.de/omr" target="_blank" title="Visit the AUDI RS MODELS">AUDI #ONEMILLIONREASONS</a></h3>
 				<h4>| 2013 | Razorfish GmbH</h4>
 			</hgroup>
 			<ul>
-				<li class="grid-item grid-15 project_audi-omr-1 fx-left"></li>
-				<li class="grid-item grid-5 project_audi-omr-2 fx-right"></li>
-				<li class="grid-item grid-5 project_audi-omr-3 fx-left"></li>
-				<li class="grid-item grid-5 project_audi-omr-4 fx-center"></li>
-				<li class="grid-item grid-5 project_audi-omr-5 fx-right"></li>
+				<li class="grid-item grid-15 project_audi-omr-1 fx-item fx-left" data-src="img/projects/2013-audi-omr/overview_590x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-omr-2 fx-item fx-right" data-src="img/projects/2013-audi-omr/detail_1_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-omr-3 fx-item fx-left" data-src="img/projects/2013-audi-omr/detail_2_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-omr-4 fx-item fx-center" data-src="img/projects/2013-audi-omr/detail_3_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-omr-5 fx-item fx-right" data-src="img/projects/2013-audi-omr/detail_4_290x332.jpg"></li>
  			</ul>
 		</article>
 
-		<article style="margin-top: 50px;">
-			<hgroup>
+		<article  class="fx-project" data-id="project_2013-audi-rs-models">
+			<hgroup class="fx-item fx-headline">
 				<h3><a href="http://audi.de/rs" target="_blank" title="Visit the AUDI RS MODELS">AUDI RS Models</a></h3>
 				<h4>| 2013 | Razorfish GmbH</h4>
 			</hgroup>
 			<ul>
-				<li class="grid-item grid-15 project_audi-rs-models-1 fx-left" data-layer-height="485" data-layer="assets/videos/900x485/audirsmodels.mp4"></li>
-				<li class="grid-item grid-5 project_audi-rs-models-2 fx-right"></li>
-				<li class="grid-item grid-5 project_audi-rs-models-3 fx-left"></li>
-				<li class="grid-item grid-5 project_audi-rs-models-4 fx-center"></li>
-				<li class="grid-item grid-5 project_audi-rs-models-5 fx-right"></li>
+				<li class="grid-item grid-15 project_audi-rs-models-1 fx-item fx-left" data-layer-height="485" data-layer="assets/videos/900x485/audirsmodels.mp4" data-src="img/projects/2013-audi-rs-models/overview_590x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-rs-models-2 fx-item fx-right" data-src="img/projects/2013-audi-rs-models/detail_1_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-rs-models-3 fx-item fx-left" data-src="img/projects/2013-audi-rs-models/detail_2_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-rs-models-4 fx-item fx-center" data-src="img/projects/2013-audi-rs-models/detail_3_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-rs-models-5 fx-item fx-right" data-src="img/projects/2013-audi-rs-models/detail_4_290x332.jpg"></li>
 			</ul>
 		</article>
 
-		<article>
-			<hgroup>
+		<article  class="fx-project" data-id="project_2012-audi-nemo">
+			<hgroup class="fx-item fx-headline">
 				<h3><a href="http://www.audi.de/de/brand/de/neuwagen/tt/tt-rs-roadster.html" target="_blank" title="Visit the new modelpages">AUDI Neue Modelseiten</a></h3>
 				<h4>| 2012 | Razorfish GmbH</h4>
 			</hgroup>
 			<ul>
-				<li class="grid-item grid-15 project_audi-nemo-1 fx-left" data-layer-height="485"></li>
-				<li class="grid-item grid-5 project_audi-nemo-2 fx-right"></li>
+				<li class="grid-item grid-15 project_audi-nemo-1 fx-item fx-left" data-layer-height="485" data-src="img/projects/2013-audi-nemo/overview_590x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-nemo-2 fx-item fx-right" data-src="img/projects/2013-audi-nemo/detail_1_290x332.jpg"></li>
 			</ul>
 		</article>
 
 
-		<article >
-			<hgroup>
+		<article  class="fx-project" data-id="project_2012-audi-a3-sportback">
+			<hgroup class="fx-item fx-headline">
 				<h3><a href="http://microsites.audi.com/a3sportback/index.html" target="_blank" title="Visit the AUDI A3 Sportback microsite">AUDI A3 Sportback</a></h3>
 				<h4>| 2012 | Razorfish GmbH</h4>
 			</hgroup>
 			<ul>
-				<li class="grid-item grid-15 project_audi-a3-sportback-1 fx-left" data-layer-height="540" data-layer="assets/videos/900x540/a3sportback.mp4"></li>
-				<li class="grid-item grid-5 project_audi-a3-sportback-2 fx-right"></li>
-				<li class="grid-item grid-5 project_audi-a3-sportback-3 fx-left"></li>
-				<li class="grid-item grid-5 project_audi-a3-sportback-4 fx-center"></li>
-				<li class="grid-item grid-5 project_audi-a3-sportback-5 fx-right"></li>
+				<li class="grid-item grid-15 project_audi-a3-sportback-1 fx-item fx-left" data-layer-height="540" data-layer="assets/videos/900x540/a3sportback.mp4" data-src="img/projects/2012-audi-a3-sportback/overview_590x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-a3-sportback-2 fx-item fx-right" data-src="img/projects/2012-audi-a3-sportback/detail-mmi_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-a3-sportback-3 fx-item fx-left" data-src="img/projects/2012-audi-a3-sportback/detail-frame_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-a3-sportback-4 fx-item fx-center" data-src="img/projects/2012-audi-a3-sportback/detail_safety-1_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-a3-sportback-5 fx-item fx-right" data-src="img/projects/2012-audi-a3-sportback/detail_safety-2_290x332.jpg"></li>
 			</ul>
 		</article>
 
 
-		<article>
-			<hgroup>
+		<article  class="fx-project" data-id="project_2011-palmengarten">
+			<hgroup class="fx-item fx-headline">
 				<h3><a href="http://www.palmentgarten.de" target="_blank" title="Visit Palmengarten.de">Palmengarten</a></h3>
 				<h4>| 2011 | Razorfish GmbH</h4>
 			</hgroup>
 
 			<ul>
-				<li class="grid-item grid-15 project_palmengarten-1 fx-left"></li>
-				<li class="grid-item grid-5 project_palmengarten-2 fx-right"></li>
-				<li class="grid-item grid-5 project_palmengarten-3 fx-left"></li>
-				<li class="grid-item grid-15 project_palmengarten-4 fx-right"></li>
-				<li class="grid-item grid-5 project_palmengarten-5 fx-left"></li>
-				<li class="grid-item grid-5 project_palmengarten-6 fx-center"></li>
-				<li class="grid-item grid-5 project_palmengarten-7 fx-right"></li>
+				<li class="grid-item grid-15 project_palmengarten-1 fx-item fx-left" data-src="img/projects/2011-palmengarten/overview_590x332.jpg"></li>
+				<li class="grid-item grid-5 project_palmengarten-2 fx-item fx-right" data-src="img/projects/2011-palmengarten/detail_butterfly_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_palmengarten-3 fx-item fx-left" data-src="img/projects/2011-palmengarten/detail_summer-plant_290x332.jpg"></li>
+				<li class="grid-item grid-15 project_palmengarten-4 fx-item fx-right" data-src="img/projects/2011-palmengarten/detail_summer-plant_590x332.jpg"></li>
+				<li class="grid-item grid-5 project_palmengarten-5 fx-item fx-left" data-src="img/projects/2011-palmengarten/detail_loader_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_palmengarten-6 fx-item fx-center" data-src="img/projects/2011-palmengarten/detail_crysantheme_290x332.jpg"></li>
+				<li class="grid-item grid-5 project_palmengarten-7 fx-item fx-right" data-src="img/projects/2011-palmengarten/detail_navigation_290x332.jpg"></li>
  			</ul>
 		</article>
 
-		<article>
-			<hgroup>
+		<article  class="fx-project" data-id="project_2011-pattex-gravity">
+			<hgroup class="fx-item fx-headline">
 				<h3><a href="http://razorfish.de/projects/pattex_gravity" target="_blank" title="Visit Pattex Gravity iPad AD">Pattex Gravity iPad AD</a></h3>
 				<h4>| 2011 | Razorfish GmbH</h4>
 			</hgroup>
 
 			<ul>
-				<li class="grid-item grid-15 project_pattex-gravity-1 fx-left"></li>
-				<li class="grid-item grid-5 project_pattex-gravity-2 fx-right"></li>
+				<li class="grid-item grid-15 project_pattex-gravity-1 fx-item fx-left" data-src="img/projects/2011-pattex-gravity/overview_590x332.jpg"></li>
+				<li class="grid-item grid-5 project_pattex-gravity-2 fx-item fx-right" data-src="img/projects/2011-pattex-gravity/detail_cta_290x332.jpg"></li>
 			</ul>
 		</article>
 
-		<article>
-			<hgroup>
+		<article  class="fx-project" data-id="project_2008-audi-ngw">
+			<hgroup class="fx-item fx-headline">
 				<h3><a href="http://www.razorfish.de/#/Referenz/Audi-Corporate-Portal/" target="_blank" title="Visit http://www.razorfish.de/#/Referenz/Audi-Corporate-Portal/">Audi Brand Portal</a></h3>
 				<h4>| 2008 | Razorfish GmbH</h4>
 			</hgroup>
 
 			<ul>
-				<li class="grid-item grid-15 project_audi-brand-portal-1 fx-left"></li>
-				<li class="grid-item grid-5 project_audi-brand-portal-2 fx-right"></li>
+				<li class="grid-item grid-15 project_audi-brand-portal-1 fx-item fx-left" data-src="img/projects/2008-audi-brand-portal/overview_590x332.jpg"></li>
+				<li class="grid-item grid-5 project_audi-brand-portal-2 fx-item fx-right" data-src="img/projects/2008-audi-brand-portal/detail_tt_290x332.jpg"></li>
 			</ul>
 		</article>
 
