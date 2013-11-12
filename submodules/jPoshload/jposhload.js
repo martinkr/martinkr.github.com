@@ -143,8 +143,6 @@
 	* @return {Void}
 	*/
 	function _doOnComplete(sIdLoader_,$elWrapper_) {
-
-console.log('DONME')
 		jQuery('html').removeClass('jPoshLoad_completed-false');
 
 	};
@@ -189,9 +187,9 @@ console.log('DONME')
 
 		// animation and stuff
 		_$elWrapper
- 				.stop()
-				.css( {'width' : [ Math.floor( (_iLoaded / _iTotal ) *100 ) ,'% '].join('')} )
-				console.log(_iLoaded , ' / ', _iTotal  ,  Math.floor( (_iLoaded / _iTotal ) *100 )  + "%")
+ 				.stop(true,true)
+				.animate( {'width' : [ Math.floor( (_iLoaded / _iTotal ) *100 ) ,'%'].join('')},1000)
+				//console.log(_iLoaded , ' / ', _iTotal  ,  Math.floor( (_iLoaded / _iTotal ) *100 )  + "%")
 		// everonyes finally loaded call onComplete
 		// if( $(document).data('jPoshload')[sIdLoader_]._aLoad.lenght === 0) {
 		if(_iLoaded === _iTotal) {
@@ -261,7 +259,7 @@ console.log('DONME')
 				forceNoCache: false,
 					images : _aImages
 				});
-			},1200)
+			},1500)
 	})
 
 

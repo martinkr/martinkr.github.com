@@ -65,6 +65,7 @@ html.jPoshLoad_completed-false #projects{
 	-ms-transition: all 1000ms ease-out 250ms;
 	transition: all 1000ms ease-out 250ms;
 }
+
 .fx-intro .fx-item {
 	-webkit-transform: rotateX(10deg) translateY(15px);
 	-ms-transform: rotateX(10deg) translateY(15px);
@@ -114,10 +115,12 @@ html.jPoshLoad_completed-false #projects{
 
 
 .has-scrolled.fx-intro-show #projects {
+/*
 	-webkit-transform: rotateX(0) translateY(0);
 	-ms-transform: rotateX(0) translateY(0);
 	-moz-transform: rotateX(0) translateY(0);
 	transform: rotateX(0) translateY(0);
+ */
 	opacity: 1;
 }
 
