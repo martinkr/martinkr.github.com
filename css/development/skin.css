@@ -131,11 +131,12 @@ h2 {
 	font-weight: 400;
 }
 
-header .sticky h2 {
+header .sticky h2 span {
 	font-size: 16px;
-	letter-spacing: 2px;
-	line-height: 60px;
-
+	letter-spacing: 0px;
+	line-height: 16px;
+	display: inline-block;
+	text-align: left;
 }
 
 /**
@@ -173,12 +174,24 @@ header .sticky {
 	width: 100%;
 	padding: 0;
 	z-index: 50;
-	height: 60px;
+	height: 80px;
+	padding: 10px 0 20px 0;
+	background: #fff;
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 78%, rgba(255,255,255,0.64) 86%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(78%,rgba(255,255,255,1)), color-stop(86%,rgba(255,255,255,0.64)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 78%,rgba(255,255,255,0.64) 86%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 78%,rgba(255,255,255,0.64) 86%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 78%,rgba(255,255,255,0.64) 86%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 78%,rgba(255,255,255,0.64) 86%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
 	overflow: hidden;
+
 }
 
 header .sticky h2 {
-	background: rgba(247, 247,247, 0.9);
+	/*background: rgba(247, 247,247, 0.9);*/
+	color: rgba(144, 144, 144, 1)
 
 }
 
