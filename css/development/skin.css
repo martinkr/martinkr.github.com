@@ -226,13 +226,19 @@ header .sticky h2 {
 
 .intro a,
 .intro a:link,
-.intro a:visited {
+.intro a:visited,
+nav.sticky a,
+nav.sticky a:link,
+nav.sticky a:visited {
 	color: rgba(144, 144, 144, 0.35);
 }
 
 .intro a,
 .intro a:hover,
-.intro a:active {
+.intro a:active ,
+nav.sticky a,
+nav.sticky a:hover,
+nav.sticky a:active {
 	color: rgba(144, 144, 144, 0.55);
 }
 
@@ -273,6 +279,11 @@ nav li:after {
 	content: ", ";
 }
 
+
+nav.sticky a {
+	content: "";
+	font-size: 13px;
+}
 
 
 /**

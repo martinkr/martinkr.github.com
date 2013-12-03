@@ -9,6 +9,10 @@
 	font-style: normal;
 }
 
+[class^="icon-"] span , [class*=" icon-"] span {
+	display: none;
+}
+
 [class^="icon-"]:before , [class*=" icon-"]:before  {
 	font-family: 'icons';
 	speak: none;
@@ -23,6 +27,22 @@
 	-webkit-font-smoothing: none;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+.sticky [class^="icon-"]:before , .sticky[class*=" icon-"]:before  {
+	font-family: 'icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+header .sticky h2 a span  {display :none;}
 
 .icon-github:before {
 	content: "\e600";
@@ -53,7 +73,7 @@
 }
 .icon-close:before {
 	content: "\e609";
-}
+}/*
 .icon-github:before {
 	content: "\e60a";
 }
@@ -98,7 +118,7 @@
 }
 .icon-tumblr2:before {
 	content: "\e618";
-}
+}*/
 .icon-logo:before {
 	content: "\e619";
 	font-size: 50px;
