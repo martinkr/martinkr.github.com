@@ -83,10 +83,10 @@ html.jPoshLoad_completed-false #projects{
 }
 
 .fx-intro-show #projects {
-	-webkit-transform: rotateX(0) translateY(350px);
-	-ms-transform: rotateX(0) translateY(350px);
-	-moz-transform: rotateX(0) translateY(350px);
-	transform: rotateX(0) translateY(350px);
+	-webkit-transform: rotateX(0) translateY(200px);
+	-ms-transform: rotateX(0) translateY(200px);
+	-moz-transform: rotateX(0) translateY(200px);
+	transform: rotateX(0) translateY(200px);
 	opacity: 0;
 	-webkit-transition: all 1000ms ease-out 0ms;
 	-moz-transition: all 1000ms ease-out 0ms;

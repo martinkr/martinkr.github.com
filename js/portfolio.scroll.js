@@ -57,7 +57,7 @@ portfolio.scroll = (function(){
 		var  _iPos;
 		if (!$element_) { return;}
  		// show as soon as the element is fully visible
-		_iPos = ($element_.size()) ? ( $element_.offset().top + $element_.outerHeight() ) * 0.9 : 0;
+		_iPos = ($element_.size()) ? ( $element_.offset().top + $element_.outerHeight()*0.25 )  : 0;
 		_aSections.push( {'show': _iPos, 'sId':sId_, '$element': $element_, 'data':$element_.data('detail') || {} });
  	},
 
@@ -177,7 +177,7 @@ portfolio.scroll = (function(){
 })();
 
 // initialize
-jQuery(document).ready(function() {
+jQuery(document).on('poshload:complete',function() {
 	portfolio.scroll.initialize();
 });
 

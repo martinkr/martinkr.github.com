@@ -144,7 +144,7 @@
 	*/
 	function _doOnComplete(sIdLoader_,$elWrapper_) {
 		jQuery('html').removeClass('jPoshLoad_completed-false');
-
+		jQuery(document).triggerHandler('poshload:complete');
 	};
 
 
