@@ -196,8 +196,20 @@ header .sticky {
 
 header .sticky h2 {
 	/*background: rgba(247, 247,247, 0.9);*/
-	color: rgba(144, 144, 144, 1)
+	/*color: rgba(144, 144, 144, 1);*/
+	color: #272424;
+	text-align: left;
+	width: 900px;
+	margin: 0 auto;
+	padding-left: 6px;
+}
 
+footer .sticky ul {
+	/*background: rgba(247, 247,247, 0.9);*/
+	color: rgba(144, 144, 144, 1);
+	text-align: right;
+	width: 900px;
+	margin: -20px auto 0 auto;
 }
 
 
