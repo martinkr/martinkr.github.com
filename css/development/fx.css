@@ -195,7 +195,18 @@ html.jPoshLoad_completed-false #projects{
 	-moz-transition: all 800ms ease 0s;
 	-ms-transition: all 800ms ease 0s;
 	transition: all 800ms ease 0s;
+	background-size: 100% 100%;
 }
+
+/* temporary zoom - for the real deal move the background image to a real image / div set overflow:hidden and use scale(1.15) */
+.fx-item:hover {
+	background-size: 115% 115%;
+	-webkit-transition: background-size 500ms linear 0s;
+	-moz-transition: background-size 500ms linear 0s;
+	-ms-transition: background-size 500ms linear 0s;
+	transition: background-size 500ms linear 0s;
+}
+
 
 /**
  * headline

@@ -121,11 +121,11 @@ header .sticky h2 a span  {display :none;}
 }*/
 .icon-logo:before {
 	content: "\e619";
-	font-size: 50px;
+	font-size: 25px;
 	display: inline-block;
 	margin: 0 2px 0 0;
 	line-height: 1em;
 	padding-top: 2px;
 	position: relative;
-	top: 6px;
+	top: 3px;
 }
