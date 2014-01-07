@@ -24,29 +24,12 @@ portfolio.scroll = (function(){
 	// private vars
 	var
 		_aSections = [],
+		_aWaypoints = [],
 		_iThrottle = 50,
- 		_bLockHandler=false,
+ 		_bLockHandler = false,
+ 		_iScrollOffset = 0,
+		_iIndexWaypoint = 0,
 
-
-
-	/**
-	 * channel handler
-	 * @param  {Object} sChannel_	normalized channel on which the message was published
-	 * @param  {Object} oData_		additional message data
-	 * @private
-	 * @return {Void}
-	*/
-	_handler = function (sChannel_,oData_) {
-
-		switch (sChannel_) {
-
-			case '':
-
-			break;
-		}
-
-
-	},
 
 	/**
 	 * Add section to the list
@@ -61,6 +44,22 @@ portfolio.scroll = (function(){
 		_aSections.push( {'show': _iPos, 'sId':sId_, '$element': $element_, 'data':$element_.data('detail') || {} });
  	},
 
+	/**
+	 * Add a waypoint to the list
+	 * @param {Object} oData_ section details
+	 */
+	_addWaypoint = function ($element_,sId_) {
+
+		var  _iPos;
+		if (!$element_) { return;}
+		_aWaypoints.push( $element_.offset().top + $element_.outerHeight() );
+ 	},
+
+	_gotoWaypoint = function (iDirection_) {
+		jQuery('html,body').animate({
+			'scrollTop': _aWaypoints[(iDirection_>0) ? ++_iIndexWaypoint:--_iIndexWaypoint] + _iScrollOffset
+		});
+ 	},
 
 	/**
 	 * Actual scoll handler.
@@ -69,11 +68,13 @@ portfolio.scroll = (function(){
 	_doScroll = function () {
 		var _iScrollTop = jQuery(document).scrollTop(),
 			_iScrolled = _iScrollTop + jQuery(window).height(),
-			_i, _iLenght = _aSections.length
+			_i,
+			_iLengthSections = _aSections.length,
+			_iLengthWaypoints = _aWaypoints.length-1
 		;
 
 		// cycle through all registered sections
-		for ( _i = 0; _i < _iLenght; _i++) {
+		for ( _i = 0; _i < _iLengthSections; _i++) {
 			// current viewport position (scroll + window height) shows the whole section
 
 			if(_iScrolled > _aSections[_i].show ) {
@@ -96,12 +97,22 @@ portfolio.scroll = (function(){
 			jQuery('html').removeClass('has-scrolled');
 		}
 
+		// update waypoint index
+		// @TODO: in between : e.g. palmengarten half way scrolled, prev should be palmengarten again not a3sb
+		for ( _i = 0; _i < _iLengthWaypoints; _i++) {
+			console.log(_iScrollTop , _aWaypoints[_i] ,_aWaypoints[_i+1] )
+			if( _iScrollTop > _aWaypoints[_i] &&  _iScrollTop < _aWaypoints[_i+1] ) {
+				_iIndexWaypoint = _i;
+				break;
+			}
+		}
+
+
 		// remove scoll lock
 		_bLockHandler = false;
 	},
 
 	_doAction = function (oData_) {
-		console.log(arguments)
 		oData_.$element.addClass('fx-show');
 	},
 
@@ -134,6 +145,10 @@ portfolio.scroll = (function(){
 			_addSection(jQuery(this),jQuery(this).data('id'));
 		})
 
+		jQuery('.fx-project[data-id]').each(function(){
+			_addWaypoint(jQuery(this),jQuery(this).data('id'));
+		})
+
 		jQuery(window).on('scroll', portfolio.scroll.onEventScroll);
 		jQuery(window).on('resize', portfolio.scroll.onEventResize);
 	};
@@ -142,15 +157,6 @@ portfolio.scroll = (function(){
 	 * Public API
 	 */
 	return {
-
-		/**
-		 * jQuery.Channel handler
-		 * @param  {Object} oData_		additional message data
-		 * @return {Void}
-		 */
-		onChannel: function (oData_) {
-			_handler(oData_.originalChannel,oData_);
-		},
 
 
 		/**
@@ -164,6 +170,8 @@ portfolio.scroll = (function(){
 		/**-@dev*/
 
 		onEventScroll:_onScroll,
+		onWaypointNext: function () { _gotoWaypoint(+1); },
+		onWaypointPrev: function () { _gotoWaypoint(-1); },
 		onEventResize:_onScroll,
 		doScroll:_doScroll,
 
