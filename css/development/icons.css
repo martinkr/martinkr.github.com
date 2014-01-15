@@ -44,81 +44,42 @@
 
 header .sticky h2 a span  {display :none;}
 
-.icon-github:before {
+.icon-arrow-up:before {
 	content: "\e600";
 }
-.icon-linkedin:before {
+.icon-arrow-down:before {
 	content: "\e601";
 }
-.icon-tumblr:before {
+.icon-arrow-up2:before {
 	content: "\e602";
 }
-.icon-xing:before {
+.icon-arrow-down2:before {
 	content: "\e603";
 }
-.icon-facebook:before {
+.icon-arrow-up3:before {
 	content: "\e604";
 }
-.icon-twitter:before {
+.icon-arrow-down3:before {
 	content: "\e605";
 }
-.icon-google-plus:before {
+.icon-github:before {
 	content: "\e606";
 }
-.icon-mail:before {
+.icon-linkedin:before {
 	content: "\e607";
 }
-.icon-vimeo2:before {
+.icon-tumblr:before {
 	content: "\e608";
 }
-.icon-close:before {
+.icon-xing:before {
 	content: "\e609";
-}/*
-.icon-github:before {
-	content: "\e60a";
-}
-.icon-vimeo:before {
-	content: "\e60b";
-}
-.icon-twitter:before {
-	content: "\e60c";
 }
 .icon-facebook:before {
-	content: "\e60d";
+	content: "\e60a";
 }
-.icon-googleplus:before {
-	content: "\e60e";
+.icon-twitter:before {
+	content: "\e60b";
 }
-.icon-tumblr:before {
-	content: "\e60f";
-}
-.icon-linkedin:before {
-	content: "\e610";
-}
-.icon-github2:before {
-	content: "\e611";
-}
-.icon-linkedin2:before {
-	content: "\e612";
-}
-.icon-skype:before {
-	content: "\e613";
-}
-.icon-vimeo2:before {
-	content: "\e614";
-}
-.icon-twitter2:before {
-	content: "\e615";
-}
-.icon-facebook2:before {
-	content: "\e616";
-}
-.icon-googleplus2:before {
-	content: "\e617";
-}
-.icon-tumblr2:before {
-	content: "\e618";
-}*/
 .icon-logo:before {
 	content: "\e619";
 	font-size: 25px;
