@@ -52,13 +52,25 @@ portfolio.scroll = (function(){
 
 		var  _iPos;
 		if (!$element_) { return;}
-		_aWaypoints.push( $element_.offset().top + $element_.outerHeight() );
+		_aWaypoints.push( $element_.offset().top - jQuery('.fx-nav-projects').position().top);
  	},
 
 	_gotoWaypoint = function (iDirection_) {
+		if (iDirection_ === -1 && jQuery(document).scrollTop() > _aWaypoints[_iIndexWaypoint] ) { 
+			_iGoto = _aWaypoints[_iIndexWaypoint] ;
+
+			jQuery('html,body').animate({
+				'scrollTop': _iGoto + _iScrollOffset
+			});
+
+			return;
+		}
+
+		_iGoto = _aWaypoints[(iDirection_>0) ? ++_iIndexWaypoint:--_iIndexWaypoint] ;
 		jQuery('html,body').animate({
-			'scrollTop': _aWaypoints[(iDirection_>0) ? ++_iIndexWaypoint:--_iIndexWaypoint] + _iScrollOffset
+			'scrollTop': _iGoto + _iScrollOffset
 		});
+
  	},
 
 	/**
@@ -79,7 +91,7 @@ portfolio.scroll = (function(){
 
 			if(_iScrolled > _aSections[_i].show ) {
 					// call start()
-					console.log("call START() on" , _aSections[_i].sId);
+//					console.log("call START() on" , _aSections[_i].sId);
 
 					_doAction(_aSections[_i]);
 
@@ -98,10 +110,8 @@ portfolio.scroll = (function(){
 		}
 
 		// update waypoint index
-		// @TODO: in between : e.g. palmengarten half way scrolled, prev should be palmengarten again not a3sb
 		for ( _i = 0; _i < _iLengthWaypoints; _i++) {
-			console.log(_iScrollTop , _aWaypoints[_i] ,_aWaypoints[_i+1] )
-			if( _iScrollTop > _aWaypoints[_i] &&  _iScrollTop < _aWaypoints[_i+1] ) {
+			if( _iScrollTop >= _aWaypoints[_i] &&  _iScrollTop < _aWaypoints[_i+1] ) {
 				_iIndexWaypoint = _i;
 				break;
 			}
@@ -151,6 +161,10 @@ portfolio.scroll = (function(){
 
 		jQuery(window).on('scroll', portfolio.scroll.onEventScroll);
 		jQuery(window).on('resize', portfolio.scroll.onEventResize);
+
+		jQuery('body').on('click', '.js--waypoint-next', portfolio.scroll.onWaypointNext);
+		jQuery('body').on('click', '.js--waypoint-prev', portfolio.scroll.onWaypointPrev);
+
 	};
 
 	/**
