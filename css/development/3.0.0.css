@@ -1,0 +1,172 @@
+/**
+ * FILEDESCRIPTION
+ *
+ * Some guidelines to follow:
+ *
+ * 1. Break code down into sections, use @section, @subsection
+ * 2. Keep your rules alphabetically sorted.
+ * 3. Only put one selector per line for a block of rules that apply to multiple selectors.
+ * 4. Indent your rules, only one rule per line.
+ * 5. Keep proprietary properties directly below the proposed property.
+ * 6. Comment your css. Especially hacks or tricky parts using cssdoc-comments
+ *
+ * @example:
+ *
+ * element#id,
+ * element.class {
+ * 	rule1: value;
+ * 	-webkit-rule2: value;
+ * 	-moz-rule2: value;
+ * 	rule2: value;
+ * 	top: value;
+ * }
+ *
+ * @lastmodified	2012-01-24 18:00 martinkr
+ *
+ * @TODO
+ *
+ */
+
+/**
+* @section
+*/
+@font-face {
+	font-family: 'montserrat-bold-webfont';
+	src:url('../../assets/fonts/montserrat-bold-webfont.eot');
+	src:url('../../assets/fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/montserrat-bold-webfont.ttf') format('truetype'),
+		url('../../assets/fonts/montserrat-bold-webfont.woff') format('woff'),
+		url('../../assets/fonts/montserrat-bold-webfont.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Novecentosanswide-Bold-webfont';
+	src:url('../../assets/fonts/Novecentosanswide-Bold-webfont.eot');
+	src:url('../../assets/fonts/Novecentosanswide-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/Novecentosanswide-Bold-webfont.ttf') format('truetype'),
+		url('../../assets/fonts/Novecentosanswide-Bold-webfont.woff') format('woff'),
+		url('../../assets/fonts/Novecentosanswide-Bold-webfont.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Novecentosanswide-Medium-webfont';
+	src:url('../../assets/fonts/Novecentosanswide-Medium-webfont.eot');
+	src:url('../../assets/fonts/Novecentosanswide-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/Novecentosanswide-Medium-webfont.ttf') format('truetype'),
+		url('../../assets/fonts/Novecentosanswide-Medium-webfont.woff') format('woff'),
+		url('../../assets/fonts/Novecentosanswide-Medium-webfont.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'leaguegothic-regular-webfont';
+	src:url('../../assets/fonts/leaguegothic-regular-webfont.eot');
+	src:url('../../assets/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+		url('../../assets/fonts/leaguegothic-regular-webfont.woff') format('woff'),
+		url('../../assets/fonts/leaguegothic-regular-webfont.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+html,
+body {
+	height: 100%;
+	min-height: 100%;
+	background : #000;
+
+}
+
+body {
+	font-family: 'montserrat-bold-webfont', 'Helvetica Neue', 'Segoe UI', Ubuntu, Roboto, Helvetica, Arial, sans-serif;
+	color: rgba(255,255,255,0.95);
+	font-size: 14px;
+	font-weight: bold;
+	height: 14px;
+	line-height: 14px;
+	background: rgba(144, 144, 144, 0.55) url('../../assets/imgs/bg-wood.jpg') 0 0 no-repeat;
+	background-size: cover;
+	text-transform: uppercase;
+}
+
+
+header {
+	position: absolute;
+	bottom:30px;
+	right: 30px;
+}
+
+h1 {
+	font-size: 42px;
+	height: 42px;
+	line-height: 42px;
+	margin-bottom: 10px;
+	text-align: right;
+	text-shadow: rgba(0, 30, 60, 0.0980392) 0px 2px 10px, rgba(0, 0, 0, 0.0470588) 0px 0px 2px;
+	word-spacing: 8px;
+	background: rgba(255,255,255,0.25);
+	padding: 5px 10px;
+	float: right;
+	clear: right;
+}
+
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+	height: 14px;
+	line-height: 14px;
+	text-align: right;
+	text-shadow: rgba(0, 30, 60, 0.0980392) 0px 2px 10px, rgba(0, 0, 0, 0.0470588) 0px 0px 2px;
+	word-spacing: 5px;
+	background: rgba(255,255,255,0.25);
+	padding: 5px 10px;
+	float: right;
+	clear: right;
+	margin-bottom: 10px;
+}
+
+a {
+	-webkit-transition: all 0.25s ease-in;
+ }
+
+a,
+a:link,
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: rgba(144, 144, 144, 1);
+	text-decoration: none;
+}
+ul {
+	float: right;
+	clear: right;
+	padding: 5px 10px;
+	background: rgba(255,255,255,0.25);
+}
+
+li {
+	display: inline-block;
+	text-align: right;
+
+}
+
+li:after {
+	content: ", ";
+}
+
+li:last-child:after {
+	content: "";
+}
+
+/**
+ * lettering
+ */
+
