@@ -1,0 +1,56 @@
+/**
+ * a simple skin
+ */
+
+
+/**
+	background: rgba(144, 144, 144, 0.55) url("../../assets/imgs/bg-postbox.jpg") 50% 100% no-repeat;
+	color: #CF4AA9;
+	color: #6F9F33; postbox
+	color: #5D5EB9;
+	color: #A96CA5;
+
+	color: #10FF47;
+	color: #000;
+	color: #222;
+	color: #eee;
+	color: #fff;
+ */
+
+/* colors */
+body {
+	font-family: "Roboto", "montserrat-bold-webfont", "Helvetica Neue", "Segoe UI", Ubuntu, Roboto, Helvetica, Arial, sans-serif;
+	color: rgba(255, 255, 255, 0.95);
+	background: rgba(144, 144, 144, 0.55) url("../../assets/imgs/bg-sky-1920x1920-60.jpg") 50% center no-repeat;
+	background-size: cover;
+}
+
+header {
+	mix-blend-mode: screen;
+	color: #CF4AA9;
+}
+
+h1 {
+	color: #A96CA5;
+}
+
+a {
+	-webkit-transition: color 0.25s ease-in;
+}
+
+a,
+a:link,
+a:visited {
+	/*color: rgba(144, 144, 144, 1);*/
+	color: #6F9F33;
+}
+
+a:hover,
+a:active {
+	color: #fff;
+}
+
+a {
+	-webkit-transition: color 0.25s ease-in;
+}
+

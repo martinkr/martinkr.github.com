@@ -1,0 +1,11 @@
+/*!
+* Hello! You're obviously interested in my work.
+* Please Note: this project does not represent "great css architecture" :D
+* It's so tiny - BEM, itCSS ,even a folder structure would be over-engineered.
+* If you want to discuss "all things front end" - please contact me :)
+* Cheers!
+*/
+@import "source/reset.css";
+@import "source/layout.css";
+@import "source/typography.css";
+@import "source/skin.css";

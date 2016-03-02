@@ -1,0 +1,75 @@
+/**
+ * "layout" :D
+ */
+
+/* layout */
+html,
+body {
+	height: 100%;
+	min-height: 100%;
+	background: #000;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 100%;
+	padding: 2rem 1rem;
+}
+
+
+h1 {
+	align-self: flex-start;
+}
+
+h2 {
+	align-self: flex-start;
+}
+
+nav {
+	align-self: flex-start;
+}
+
+li {
+	display: inline-block;
+}
+
+li::after {
+	content: ", ";
+}
+
+li:last-child::after {
+	content: "";
+}
+
+
+@media only screen and (orientation: landscape) {
+	background-position: center center;
+}
+
+
+@media  screen and (min-width: 450px) and (max-width: 786px) {
+
+	h1 {
+		margin-bottom: 0.5rem;
+	}
+
+	h2 {
+		margin-bottom: 0.5rem;
+	}
+
+	h1 {
+		align-self: center;
+	}
+
+	h2 {
+		align-self: center;
+	}
+
+	nav {
+		align-self: center;
+		text-align: center;
+	}
+}
+

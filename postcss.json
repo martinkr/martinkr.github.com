@@ -1,0 +1,24 @@
+{
+    "use": ["postcss-import",  "stylelint", "postcss-cssnext", "cssnano"],
+    "input": "./styles/import.css",
+    "output": "./styles/build/styles.css",
+    "map": "./styles/build/styles.map.css",
+    "local-plugins": true,
+    "postcss-import": {
+
+    },
+    "stylelint": {
+      "extends": "./node_modules/stylelint-config-standard/index.js"
+    },
+    "doiuse": {
+      "browsers": "last 2 versions",
+      "ignoreFiles": ["**/normalize.css"],
+      "ignore": ["vh", "vw", "viewport-units"]
+    },
+    "postcss-cssnext": {
+      "browsers": "last 2 versions"
+    },
+    "cssnano" : {
+
+    }
+}
