@@ -1,0 +1,112 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-amd-system-wrapper > babel-template > babel-traverse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - doiuse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-cli > postcss-reporter > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - stylelint > postcss-reporter > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - stylelint > doiuse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - stylelint > stylehacks > postcss-reporter > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - stylelint > colorguard > postcss-reporter > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-generator > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-global-system-wrapper > babel-template > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-es2015-modules-systemjs > babel-template > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-cjs-system-wrapper > babel-template > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-amd-system-wrapper > babel-template > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-template > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-traverse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-global-system-wrapper > babel-template > babel-traverse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-cjs-system-wrapper > babel-template > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-es2015-modules-systemjs > babel-template > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-global-system-wrapper > babel-template > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-es2015-modules-systemjs > babel-helper-hoist-variables > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-generator > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-amd-system-wrapper > babel-template > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-template > babel-traverse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - stylelint > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-cjs-system-wrapper > babel-template > babel-traverse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-es2015-modules-systemjs > babel-template > babel-traverse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-template > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-traverse > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-helpers > babel-template > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-helpers > babel-template > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-helpers > babel-template > babel-traverse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-traverse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-amd-system-wrapper > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-cjs-system-wrapper > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-generator > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-template > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-es2015-modules-systemjs > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-global-system-wrapper > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-traverse > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-helpers > babel-template > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-template > babel-traverse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-generator > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-template > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-helpers > babel-template > babel-traverse > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-helpers > babel-template > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2019-07-04T04:46:24.121Z'
