@@ -1,0 +1,122 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - doiuse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - stylelint > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-cli > postcss-reporter > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - stylelint > postcss-reporter > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - stylelint > table > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - stylelint > postcss-jsx > @babel/core > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/helper-module-transforms > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-generator > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-template > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-amd-system-wrapper > babel-template > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-cjs-system-wrapper > babel-template > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-es2015-modules-systemjs > babel-template > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-global-system-wrapper > babel-template > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-generator > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-template > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-amd-system-wrapper > babel-template > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-cjs-system-wrapper > babel-template > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-es2015-modules-systemjs > babel-template > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-global-system-wrapper > babel-template > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-es2015-modules-systemjs > babel-helper-hoist-variables > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-template > babel-traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-amd-system-wrapper > babel-template > babel-traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-cjs-system-wrapper > babel-template > babel-traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-es2015-modules-systemjs > babel-template > babel-traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-global-system-wrapper > babel-template > babel-traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-helpers > babel-template > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-amd-system-wrapper > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-cjs-system-wrapper > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-es2015-modules-systemjs > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-plugin-transform-global-system-wrapper > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-helpers > babel-template > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-generator > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-helpers > babel-template > babel-traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-template > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-generator > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-template > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-template > babel-traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-helpers > babel-template > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - stylelint > postcss-jsx > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-helpers > babel-template > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-helpers > babel-template > babel-traverse > lodash:
+        patched: '2020-05-01T04:47:20.017Z'
+    - postcss-import > pkg-resolve > jspm > systemjs-builder > babel-core > babel-register > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-05-01T04:47:20.017Z'

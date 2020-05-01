@@ -4,9 +4,13 @@
   "description": "Martin Krause. Front End Architecture.",
   "main": "index.html",
   "scripts": {
-    "postcss": "postcss  -c postcss.json"
+    "postcss": "postcss  -c postcss.json",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
-  "dependencies": {},
+  "dependencies": {
+    "snyk": "^*"
+  },
   "devDependencies": {
     "doiuse": "^2.3.0",
     "postcss": "^5.0.18",
@@ -20,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/martinkr/martinkr.github.com/issues"
   },
-  "homepage": "https://martinkr.github.com"
+  "homepage": "https://martinkr.github.com",
+  "snyk": true
 }
