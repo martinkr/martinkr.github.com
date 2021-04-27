@@ -8,11 +8,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "doiuse": "^2.3.0",
-    "postcss": "^5.0.18",
-    "postcss-cli": "^6.0.0",
-    "postcss-import": "^8.0.2",
-    "stylelint": "^11.0.0",
+    "doiuse": "^4.3.0",
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.0.0",
+    "postcss-import": "^13.0.0",
+    "stylelint": "^13.7.0",
     "stylelint-config-standard": "^3.0.0"
   },
   "author": "martin krause",
