@@ -4,55 +4,62 @@
 
 html,
 body {
-	font-smoothing: antialiased;
-	font-smoothing: grayscale;
-	text-rendering: optimizelegibility;
-	font-size: 8px;
-	line-height: 8px;
+  font-smoothing: antialiased;
+  font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  font-size: 8px;
+  line-height: 8px;
 }
 
 body {
-	text-transform: uppercase;
-	font-size: 1.618rem;
+  text-transform: uppercase;
+  font-size: 1.618rem;
 }
 
 h1 {
-	font-size: 4.236em;
-	line-height: 0.8;
-	margin-bottom: 1rem;
-	word-spacing: 8px;
+  font-size: 4.236em;
+  line-height: 0.8;
+  margin-bottom: 1rem;
+  word-spacing: 8px;
 }
 
 h2 {
-	font-size: 2.618em;
-	line-height: 0.8;
-	margin-bottom: 1rem;
-	font-weight: bold;
-	word-spacing: 5px;
+  font-size: 2.618em;
+  line-height: 0.8;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  word-spacing: 5px;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 0.8;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  word-spacing: 5px;
 }
 
 a,
 a:link,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover,
 a:active {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-@media  screen and (min-width: 450px) and (max-width: 786px) {
-	html,
-	body {
-		font-size: 2vw;
-	}
+@media screen and (min-width: 450px) and (max-width: 786px) {
+  html,
+  body {
+    font-size: 2vw;
+  }
 }
 
-
-@media  screen and (min-width: 787px) {
-	html,
-	body {
-		font-size: 16px;
-	}
+@media screen and (min-width: 787px) {
+  html,
+  body {
+    font-size: 16px;
+  }
 }
