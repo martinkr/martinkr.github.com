@@ -10,9 +10,9 @@
   "devDependencies": {
     "doiuse": "^2.3.0",
     "postcss": "^5.0.18",
-    "postcss-cli": "^6.0.0",
-    "postcss-import": "^8.0.2",
-    "stylelint": "^11.0.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^9.0.0",
+    "stylelint": "^13.0.0",
     "stylelint-config-standard": "^3.0.0"
   },
   "author": "martin krause",
