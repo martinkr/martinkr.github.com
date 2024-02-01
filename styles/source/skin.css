@@ -2,7 +2,6 @@
  * a simple skin
  */
 
-
 /**
 	background: rgba(144, 144, 144, 0.55) url("../../assets/imgs/bg-postbox.jpg") 50% 100% no-repeat;
 	color: #CF4AA9;
@@ -19,38 +18,56 @@
 
 /* colors */
 body {
-	font-family: "Roboto", "montserrat-bold-webfont", "Helvetica Neue", "Segoe UI", Ubuntu, Roboto, Helvetica, Arial, sans-serif;
-	color: rgba(255, 255, 255, 0.95);
-	background: rgba(144, 144, 144, 0.55) url("../../assets/imgs/bg-sky-1920x1920-60.jpg") 50% center no-repeat;
-	background-size: cover;
+  font-family: "Roboto", "montserrat-bold-webfont", "Helvetica Neue", "Segoe UI",
+    Ubuntu, Roboto, Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(144, 144, 144, 0.55)
+    url("../../assets/imgs/bg-sky-1920x1920-60.jpg") 50% center no-repeat;
+  background-size: cover;
 }
 
 header {
-	mix-blend-mode: screen;
-	color: #CF4AA9;
+  mix-blend-mode: screen;
+  color: #cf4aa9;
 }
 
 h1 {
-	color: #A96CA5;
+  color: #a96ca5;
 }
 
 a {
-	-webkit-transition: color 0.25s ease-in;
+  -webkit-transition: color 0.25s ease-in;
 }
 
 a,
 a:link,
 a:visited {
-	/*color: rgba(144, 144, 144, 1);*/
-	color: #6F9F33;
+  /*color: rgba(144, 144, 144, 1);*/
+  color: #6f9f33;
 }
 
 a:hover,
 a:active {
-	color: #fff;
+  color: #fff;
 }
 
 a {
-	-webkit-transition: color 0.25s ease-in;
+  -webkit-transition: color 0.25s ease-in;
 }
 
+footer a,
+footer a:link,
+footer a:visited {
+  color: #747474;
+}
+footer a:hover,
+footer a:active {
+  color: #fff;
+}
+article {
+  background: linear-gradient(
+    0deg,
+    rgb(0 0 0 / 94%) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+}

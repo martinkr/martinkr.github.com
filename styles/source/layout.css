@@ -10,11 +10,14 @@ body {
   background: #000;
 }
 
-header {
+main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
+}
+
+article {
   padding: 2rem 1rem;
 }
 
@@ -34,6 +37,7 @@ h3 {
 }
 nav {
   align-self: flex-start;
+  line-height: 1;
 }
 
 li {
@@ -53,6 +57,10 @@ li:last-child::after {
 }
 
 @media screen and (min-width: 450px) and (max-width: 786px) {
+  main {
+    align-self: center;
+    text-align: center;
+  }
   h1 {
     margin-bottom: 0.5rem;
   }
@@ -63,21 +71,5 @@ li:last-child::after {
 
   h3 {
     margin: 2rem 0 0.5rem 0;
-  }
-
-  h1 {
-    align-self: center;
-  }
-
-  h2 {
-    align-self: center;
-  }
-  h3 {
-    align-self: center;
-  }
-
-  nav {
-    align-self: center;
-    text-align: center;
   }
 }

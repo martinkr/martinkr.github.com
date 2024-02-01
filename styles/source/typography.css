@@ -39,6 +39,22 @@ h3 {
   word-spacing: 5px;
 }
 
+h3 {
+  font-size: 1.5em;
+  line-height: 0.8;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  word-spacing: 5px;
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+footer {
+  font-size: 12px;
+}
+
 a,
 a:link,
 a:visited {
