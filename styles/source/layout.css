@@ -32,16 +32,19 @@ h2 {
 h3 {
   align-self: flex-start;
 }
-h3 {
-  margin: 2rem 0 0.5rem 0;
-}
+ 
 nav {
   align-self: flex-start;
   line-height: 1;
 }
 
+.list-publications {
+  margin: 1em 0 1.5em 0;
+}
+
 li {
-  display: inline-block;
+  display: inline-flex;
+
 }
 
 li::after {

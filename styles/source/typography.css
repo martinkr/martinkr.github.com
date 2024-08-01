@@ -19,32 +19,59 @@ body {
 h1 {
   font-size: 4.236em;
   line-height: 0.8;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   word-spacing: 8px;
 }
 
 h2 {
   font-size: 2.618em;
   line-height: 0.8;
-  margin-bottom: 1rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
   font-weight: bold;
-  word-spacing: 5px;
+  word-spacing: 6px;
+  letter-spacing: 1.0px;
 }
 
 h3 {
   font-size: 1.5em;
   line-height: 0.8;
-  margin-bottom: 1rem;
+  margin: 0;
+  margin-bottom: 0.75rem;
   font-weight: bold;
-  word-spacing: 5px;
+  word-spacing: 0px;
+  letter-spacing: 0.6px;
 }
 
-h3 {
-  font-size: 1.5em;
+h4 {
+  font-size: 1.4em;
   line-height: 0.8;
-  margin-bottom: 1rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
   font-weight: bold;
-  word-spacing: 5px;
+  word-spacing: 0px;
+  letter-spacing: 0.5px;
+}
+
+h5 {
+  font-size: 1.2em;
+  line-height: 0.8;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  word-spacing: 0px;
+  letter-spacing: 0.5px;
+   
+}
+
+.page-pulications h2{
+  font-size: 2.11em;
+  line-height: 0.8;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  word-spacing: 0px;
+  letter-spacing: 1px;
 }
 
 nav {

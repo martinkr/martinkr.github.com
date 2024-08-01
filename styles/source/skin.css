@@ -35,7 +35,15 @@ h1 {
   color: #a96ca5;
 }
 
+
+h5 {
+  mix-blend-mode:screen;
+  opacity: 0.75;
+   color: #cf4aa9;
+}
+
 a {
+   transition: color 0.25s ease-in;
   -webkit-transition: color 0.25s ease-in;
 }
 
@@ -51,7 +59,20 @@ a:active {
   color: #fff;
 }
 
+.list-publications a,
+.list-publications a:link,
+.list-publications a:visited {
+  /*color: rgba(144, 144, 144, 1);*/
+  color:#fff;
+}
+
+.list-publications a:hover,
+.list-publications a:active {
+  color: #6f9f33;
+}
+
 a {
+   transition: color 0.25s ease-in;
   -webkit-transition: color 0.25s ease-in;
 }
 
