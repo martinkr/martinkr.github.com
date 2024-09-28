@@ -46,9 +46,6 @@ li {
   display: inline-flex;
 
 }
-.list-publications li {
-  diplay: block;
-}
 
 li::after {
   content: ", ";
@@ -57,6 +54,15 @@ li::after {
 li:last-child::after {
   content: "";
 }
+
+.list-publications li {
+  diplay: block;
+  margin: 0em 0 1.5em 0;
+}
+.list-publications li::after {
+  content: ", ";
+}
+
 
 @media only screen and (orientation: landscape) {
   background-position: center center;
