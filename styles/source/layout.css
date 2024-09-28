@@ -57,10 +57,10 @@ li:last-child::after {
 
 .list-publications li {
   display: block;
-  margin: 0em 0 1.5em 0;
+  margin: 0em 0 0.5em 0;
 }
 .list-publications li::after {
-  content: ", ";
+  content: "";
 }
 
 
