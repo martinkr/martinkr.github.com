@@ -46,6 +46,9 @@ li {
   display: inline-flex;
 
 }
+.list-publications {
+  diplay: block;
+}
 
 li::after {
   content: ", ";
