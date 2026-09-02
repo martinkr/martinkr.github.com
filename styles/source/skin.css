@@ -25,7 +25,7 @@ body {
     url("../../assets/imgs/bg-sky-1920x1920-60.jpg") 50% center no-repeat;
   background-size: cover;
 }
-main:hover {    backdrop-filter: grayscale(30%) brightness(30%);}
+body:hover {    backdrop-filter: grayscale(30%) brightness(30%);}
 header {
   mix-blend-mode: screen;
   color: #cf4aa9;
